@@ -1,0 +1,166 @@
+/* main things */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,300;1,200;1,300&family=Libre+Baskerville:wght@700&display=swap');
+:root{
+  --primaryColor:#bdb7b7;
+  --secondColor:#171110;
+  --thirdColor:#dda246;
+
+
+
+
+}
+@media (min-width:320px) {
+  body{
+ 
+    background-image:url(https://images.unsplash.com/photo-1617004446721-f712c5897941?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+   }
+  
+}
+
+
+
+/* common Style */
+
+a{
+  text-decoration: none;
+  /* text-justify: auto; */
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--thirdColor);
+  font-family:'Josefin Sans',serif ;
+  
+}
+.header{
+  font-weight: 400;
+  color: #5b585f;
+  font-family: serif;
+}
+pre{
+  color: #bdb7b7;
+  position:sticky;
+  font-size: large;
+}
+pre::first-letter{
+  color: var(--thirdColor);
+  font-size: x-large;
+  /* text-align: center; */
+}
+p{
+  font-family: 'Josefin Sans';
+  font-weight:600 ;
+  color: whitesmoke;
+}
+p::first-letter{
+
+  font-size: x-large;
+  color: var(--thirdColor);
+  font-weight: 700;
+  /* font-style: italic; */
+}
+
+/* .navigationBar{
+  display: inline-flex;
+  flex-direction: row;
+} */
+.navigationBarElements{
+  display: flex; /*we use display flex on container so the container there is li*/
+  justify-content:space-around;
+  align-items: center; 
+  border: 1px solid black;
+}
+.navigationListItems{
+  border : 1px solid var(--primaryColor);
+  border-radius: 1rem;
+  /* margin: 4px; */
+  padding: 4px 8px 4px 8px;
+  /* flex: 1 0 20%; */
+  
+  
+
+}
+.navigationListItems img{
+  flex:1 0 5%; 
+  max-width: 42px;
+}
+#imageIn{
+  border: none;
+  background-color: var(--thirdColor);
+}
+.saka{
+  top: 67px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  /* align-items: center; */
+
+}
+.loginBox{
+  /* top: 80%;
+  bottom: 50%; */
+  position:absolute;
+  width: 350px;
+  height: 290px;
+  border: 2px solid var(--thirdColor);
+  padding: 25px;
+  background-color: rgba(0, 0,0, 0.8);
+  /* margin: 30px; */
+  /* left: 40%;
+  right:40%; */
+  border-radius: 1rem;
+  
+}
+.loginBox input{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.loginBox input[type='text'], input[type='password']
+{
+  border: none;
+  border-bottom:1px solid #000000;
+  background:transparent;
+  outline:none;
+  /* line-height: 40px; */
+  color: rgb(255, 253, 253);
+
+
+}
+.loginBox input[type="submit"]{
+ border-radius: 50rem;
+ background-color: transparent;
+ color: #e16251;
+ font-family: 'Josefin Sans';
+ font-size: 18px;
+ font-weight: bold;
+ border: #171110;
+
+}
+.loginBox input[type='submit']:hover{
+  box-shadow:0px 15px 20px  #dda246;/* x-offset ,y-offset blur-radius spread-radi color*/
+  color:var(--thirdColor);
+  cursor: pointer;
+}
+input::placeholder{
+  color:rgb(88, 86, 86);
+
+}
+.avatar{
+  max-width: 56px;
+  max-height: 55px;
+  border-radius: 5rem;
+  border: 1px solid var(--thirdColor);
+  transform: translate(140px,-30px);
+}
+#signUp{
+  order: 2;
+  background-color: #000000;
+
+}
+#signUp:hover{
+  box-shadow: 0 20px 20px var(--thirdColor);
+}
